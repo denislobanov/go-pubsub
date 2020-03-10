@@ -4,8 +4,8 @@ import (
 	"context"
 	"errors"
 
+	"github.com/denislobanov/go-pubsub"
 	"github.com/streadway/amqp"
-	"github.com/utilitywarehouse/go-pubsub"
 )
 
 var _ pubsub.MessageSource = (*messageSource)(nil)

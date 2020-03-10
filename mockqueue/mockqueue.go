@@ -4,7 +4,7 @@ import (
 	"context"
 	"errors"
 
-	"github.com/utilitywarehouse/go-pubsub"
+	"github.com/denislobanov/go-pubsub"
 )
 
 var _ pubsub.MessageSink = (*MockQueue)(nil)

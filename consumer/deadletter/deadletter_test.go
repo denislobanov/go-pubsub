@@ -5,10 +5,11 @@ import (
 	"testing"
 
 	"encoding/json"
+
+	"github.com/denislobanov/go-pubsub"
+	"github.com/denislobanov/go-pubsub/mockqueue"
 	"github.com/magiconair/properties/assert"
 	"github.com/pkg/errors"
-	"github.com/utilitywarehouse/go-pubsub"
-	"github.com/utilitywarehouse/go-pubsub/mockqueue"
 )
 
 func TestDeadLetter(t *testing.T) {

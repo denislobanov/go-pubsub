@@ -4,8 +4,8 @@ import (
 	"context"
 	"log"
 
-	pubsub "github.com/utilitywarehouse/go-pubsub"
-	"github.com/utilitywarehouse/go-pubsub/sqs"
+	pubsub "github.com/denislobanov/go-pubsub"
+	"github.com/denislobanov/go-pubsub/sqs"
 )
 
 func consumerExample() {

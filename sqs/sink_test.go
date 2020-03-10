@@ -5,8 +5,8 @@ import (
 	"testing"
 
 	awsSQS "github.com/aws/aws-sdk-go/service/sqs"
+	pubSQS "github.com/denislobanov/go-pubsub/sqs"
 	"github.com/pkg/errors"
-	pubSQS "github.com/utilitywarehouse/go-pubsub/sqs"
 )
 
 func Test_PutMessageMissingClient_Fail(t *testing.T) {

@@ -6,8 +6,8 @@ import (
 	"log"
 	"time"
 
-	"github.com/utilitywarehouse/go-pubsub"
-	nats "github.com/utilitywarehouse/go-pubsub/natss"
+	"github.com/denislobanov/go-pubsub"
+	nats "github.com/denislobanov/go-pubsub/natss"
 )
 
 func main() {

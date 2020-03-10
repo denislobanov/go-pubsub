@@ -7,8 +7,8 @@ import (
 	"log"
 	"time"
 
-	"github.com/utilitywarehouse/go-pubsub"
-	"github.com/utilitywarehouse/go-pubsub/kafka"
+	"github.com/denislobanov/go-pubsub"
+	"github.com/denislobanov/go-pubsub/kafka"
 )
 
 func main() {

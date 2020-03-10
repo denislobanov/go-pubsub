@@ -7,9 +7,9 @@ import (
 	"time"
 
 	"github.com/aws/aws-sdk-go/service/sqs"
+	pubsub "github.com/denislobanov/go-pubsub"
+	pubSQS "github.com/denislobanov/go-pubsub/sqs"
 	"github.com/pkg/errors"
-	pubsub "github.com/utilitywarehouse/go-pubsub"
-	pubSQS "github.com/utilitywarehouse/go-pubsub/sqs"
 )
 
 func Test_ConsumeMessagesMissingClient_Fail(t *testing.T) {

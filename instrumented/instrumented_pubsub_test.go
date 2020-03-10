@@ -5,10 +5,10 @@ import (
 	"testing"
 	"time"
 
+	pubsub "github.com/denislobanov/go-pubsub"
+	"github.com/denislobanov/go-pubsub/instrumented"
+	"github.com/denislobanov/go-pubsub/mockqueue"
 	"github.com/prometheus/client_golang/prometheus"
-	pubsub "github.com/utilitywarehouse/go-pubsub"
-	"github.com/utilitywarehouse/go-pubsub/instrumented"
-	"github.com/utilitywarehouse/go-pubsub/mockqueue"
 )
 
 func TestInstrumentation(t *testing.T) {

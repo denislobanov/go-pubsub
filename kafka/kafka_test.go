@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/pborman/uuid"
-	"github.com/utilitywarehouse/go-pubsub"
+	"github.com/denislobanov/go-pubsub"
 )
 
 var (
