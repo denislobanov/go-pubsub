@@ -2,10 +2,10 @@ package kafka
 
 import (
 	"context"
+	cluster "github.com/bsm/sarama-cluster"
 	"time"
 
 	"github.com/Shopify/sarama"
-	"github.com/utilitywarehouse/sarama-cluster"
 	"github.com/utilitywarehouse/go-pubsub"
 	"golang.org/x/sync/errgroup"
 )
