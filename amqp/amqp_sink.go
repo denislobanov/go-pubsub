@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"sync"
 
+	"github.com/denislobanov/go-pubsub"
 	"github.com/streadway/amqp"
-	"github.com/utilitywarehouse/go-pubsub"
 )
 
 var _ pubsub.MessageSink = (*messageSink)(nil)

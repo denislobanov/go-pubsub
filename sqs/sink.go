@@ -4,8 +4,8 @@ import (
 	"sync"
 
 	awsSQS "github.com/aws/aws-sdk-go/service/sqs"
+	pubsub "github.com/denislobanov/go-pubsub"
 	"github.com/pkg/errors"
-	pubsub "github.com/utilitywarehouse/go-pubsub"
 )
 
 // MessageSinkConfig allows you to set sink options.

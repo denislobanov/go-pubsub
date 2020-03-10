@@ -2,12 +2,13 @@ package sns
 
 import (
 	"fmt"
+
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/sns"
 	"github.com/aws/aws-sdk-go/service/sns/snsiface"
+	"github.com/denislobanov/go-pubsub"
 	"github.com/pkg/errors"
-	"github.com/utilitywarehouse/go-pubsub"
 )
 
 type messageSink struct {

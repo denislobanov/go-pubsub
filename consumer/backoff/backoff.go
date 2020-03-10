@@ -4,7 +4,7 @@ import (
 	"math"
 	"time"
 
-	"github.com/utilitywarehouse/go-pubsub"
+	"github.com/denislobanov/go-pubsub"
 )
 
 // New returns a new ExponentialBackOffRetryingErrorHandler

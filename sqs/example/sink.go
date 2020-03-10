@@ -7,7 +7,7 @@ import (
 	"github.com/aws/aws-sdk-go/aws/credentials"
 	"github.com/aws/aws-sdk-go/aws/session"
 	awsSQS "github.com/aws/aws-sdk-go/service/sqs"
-	"github.com/utilitywarehouse/go-pubsub/sqs"
+	"github.com/denislobanov/go-pubsub/sqs"
 )
 
 // This is an example struct that satisfies pubsub.ProducerMessage interface.

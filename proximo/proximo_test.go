@@ -10,8 +10,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/denislobanov/go-pubsub"
 	"github.com/pborman/uuid"
-	"github.com/utilitywarehouse/go-pubsub"
 )
 
 func TestMain(m *testing.M) {

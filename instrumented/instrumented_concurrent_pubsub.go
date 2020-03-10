@@ -3,8 +3,8 @@ package instrumented
 import (
 	"context"
 
+	pubsub "github.com/denislobanov/go-pubsub"
 	"github.com/prometheus/client_golang/prometheus"
-	pubsub "github.com/utilitywarehouse/go-pubsub"
 )
 
 // ConcurrentMessageSource is an an Instrumented pubsub MessageSource
@@ -14,7 +14,6 @@ type ConcurrentMessageSource struct {
 	counter *prometheus.CounterVec
 	topic   string
 }
-
 
 // NewDefaultConcurrentMessageSource returns a new pubsub MessageSource wrapped in default instrumentation
 func NewDefaultConcurrentMessageSource(source pubsub.ConcurrentMessageSource, topic string) pubsub.ConcurrentMessageSource {
@@ -47,7 +46,6 @@ func NewConcurrentMessageSource(
 	return &ConcurrentMessageSource{source, counter, topic}
 }
 
-
 // ConsumeMessages is an implementation of interface method, wrapping the call in instrumentation
 func (ims *ConcurrentMessageSource) ConsumeMessages(
 	ctx context.Context, handler pubsub.ConsumerMessageHandler, onError pubsub.ConsumerErrorHandler) error {
@@ -60,7 +58,6 @@ func (ims *ConcurrentMessageSource) ConsumeMessagesConcurrently(ctx context.Cont
 	instrumentedHandler := newMsgHandler(handler, ims.counter, ims.topic)
 	return ims.impl.ConsumeMessagesConcurrently(ctx, instrumentedHandler, onError)
 }
-
 
 // Status returns the status of this source, or an error if the status could not be determined.
 func (ims *ConcurrentMessageSource) Status() (*pubsub.Status, error) {

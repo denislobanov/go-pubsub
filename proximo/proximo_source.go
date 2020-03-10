@@ -4,8 +4,8 @@ import (
 	"context"
 	"errors"
 
-	"github.com/utilitywarehouse/go-pubsub"
-	"github.com/utilitywarehouse/go-pubsub/proximo/internal/proximoc"
+	"github.com/denislobanov/go-pubsub"
+	"github.com/denislobanov/go-pubsub/proximo/internal/proximoc"
 )
 
 var _ pubsub.MessageSource = (*messageSource)(nil)

@@ -6,11 +6,11 @@ import (
 	"encoding/hex"
 	"time"
 
+	"github.com/denislobanov/go-pubsub"
 	"github.com/nats-io/nats.go"
 	"github.com/nats-io/stan.go"
 	"github.com/nats-io/stan.go/pb"
 	"github.com/pkg/errors"
-	"github.com/utilitywarehouse/go-pubsub"
 )
 
 func generateID() string {

@@ -1,14 +1,15 @@
 package sns_test
 
 import (
+	"testing"
+
 	"github.com/aws/aws-sdk-go/aws"
 	sns2 "github.com/aws/aws-sdk-go/service/sns"
+	"github.com/denislobanov/go-pubsub"
+	"github.com/denislobanov/go-pubsub/sns"
+	"github.com/denislobanov/go-pubsub/sns/mocks"
 	. "github.com/golang/mock/gomock"
 	"github.com/pkg/errors"
-	"github.com/utilitywarehouse/go-pubsub"
-	"github.com/utilitywarehouse/go-pubsub/sns"
-	"github.com/utilitywarehouse/go-pubsub/sns/mocks"
-	"testing"
 )
 
 const topic = "test topic"

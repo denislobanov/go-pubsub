@@ -3,9 +3,9 @@ package natss
 import (
 	"sync"
 
+	"github.com/denislobanov/go-pubsub"
 	"github.com/nats-io/stan.go"
 	"github.com/pkg/errors"
-	"github.com/utilitywarehouse/go-pubsub"
 )
 
 var _ pubsub.MessageSink = (*messageSink)(nil)

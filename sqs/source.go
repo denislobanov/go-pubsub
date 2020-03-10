@@ -6,8 +6,8 @@ import (
 
 	"github.com/aws/aws-sdk-go/aws"
 	awsSQS "github.com/aws/aws-sdk-go/service/sqs"
+	pubsub "github.com/denislobanov/go-pubsub"
 	"github.com/pkg/errors"
-	pubsub "github.com/utilitywarehouse/go-pubsub"
 )
 
 // MessageSourceConfig allows you to configure various source options.

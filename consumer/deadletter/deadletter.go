@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/utilitywarehouse/go-pubsub"
+	"github.com/denislobanov/go-pubsub"
 )
 
 // FailedConsumerMessage a struct for storing failed consumer messages

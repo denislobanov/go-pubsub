@@ -3,8 +3,8 @@ package instrumented
 import (
 	"context"
 
+	pubsub "github.com/denislobanov/go-pubsub"
 	"github.com/prometheus/client_golang/prometheus"
-	pubsub "github.com/utilitywarehouse/go-pubsub"
 )
 
 // MessageSource is an an Instrumented pubsub MessageSource

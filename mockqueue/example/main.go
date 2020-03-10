@@ -6,8 +6,8 @@ import (
 	"log"
 	"time"
 
-	"github.com/utilitywarehouse/go-pubsub"
-	"github.com/utilitywarehouse/go-pubsub/mockqueue"
+	"github.com/denislobanov/go-pubsub"
+	"github.com/denislobanov/go-pubsub/mockqueue"
 )
 
 func main() {

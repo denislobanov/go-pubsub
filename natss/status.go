@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
+	pubsub "github.com/denislobanov/go-pubsub"
 	"github.com/nats-io/nats.go"
-	pubsub "github.com/utilitywarehouse/go-pubsub"
 )
 
 // ErrNotConnected is returned if a status is requested before the connection has been initialized

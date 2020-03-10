@@ -2,7 +2,7 @@ package kafka
 
 import (
 	"github.com/Shopify/sarama"
-	"github.com/utilitywarehouse/go-pubsub"
+	"github.com/denislobanov/go-pubsub"
 )
 
 func status(brokerAddrs []string, topic string) (*pubsub.Status, error) {
